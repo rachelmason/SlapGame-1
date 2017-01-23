@@ -1,12 +1,54 @@
 <html>
+
 <head>
 	<title>Slap Object Game</title>
-	<link rel="stylesheet" href="">
-	<link rel="stylesheet" href="">
-	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		crossorigin="anonymous">
+	<link rel="stylesheet" href="game.css">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-1 bkStats">
+				<h1>Mr. Dude's <span id="MrDude"> </span></h1>
+				<div class="row">
+					<h3>Health: <span id="health">100</span></h3>
+				</div>
+				<div class="row">
+					<h3>Hits: <span id="hits">0</span></h3>
+				</div>
+				<div class="row">
+					<h3>Sheild: <span id="sheild">  </span></h3>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-md-offset-3 bkButtons">
+				<div class="row">
+					<h4>Attacks</h4>
+					<button class="btn btn-default" onclick="slap();gotHit();">SLAP</button>
+<button class="btn btn-default" onclick="punch();gotHit();">PUNCH</button>
+<button class="btn btn-default" onclick="kick();gotHit();">KICK</button>
+</div>
+<div class="row">
+	<h4>Items</h4>
+	<button class="btn btn-default" onclick="giveItem('sheild', mrDude)">SHEILD</button>
+<button class="btn btn-default" onclick="useItem('food', mrDude)">FOOD</button>
+<button class="btn btn-default" onclick="useItem('water', mrDude)">WATER</button>
+</div>
+</div>
+</div>
+</div>
+
 </head>
+
 <body>
-	
-	<script src=""></script>
+	<div class="row">
+		<div class="col-md-2 col-md-offset-5">
+			<img src="https://img.clipartfest.com/1043bb0cc2f5b1c8a9a4ec370c813f1c_free-icons-pngsquirrel-png-transparent-background-squirel-clipart_1024-746.png" alt="evil icon"
+				width="200px">
+		</div>
+	</div>
+	</div>
+	<script src="game.js">
+	</script>
 </body>
+
 </html>
