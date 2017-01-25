@@ -20,6 +20,8 @@ img {
 }
 .btn{
 text-align: center;
+margin-bottom: 16px;
+margin-left: 20px;
 }
 .bkStats{
 background: rgba(75, 59, 3, .5);
@@ -30,5 +32,17 @@ width: 25%;
 background: rgba(75, 59, 3, .5);
 border-radius: 25px;
 width: 25%;
-height: 19%;
+
+}
+#health{
+position: relative;
+width: 100%;
+height: 30px;
+background-color:rgba(75, 59, 3, .5); 
+}
+#currentHealth{
+position: relative;
+width: 100%;
+height: 100%;
+background-color:seagreen; 
 }

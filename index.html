@@ -10,28 +10,28 @@
 			<div class="col-md-4 col-md-offset-1 bkStats">
 				<h1>Mr. Dude's <span id="MrDude"> </span></h1>
 				<div class="row">
-					<h3>Health: <span id="health">100</span></h3>
+					<div id="health">
+						<div id="currentHealth"> </div>
+					</div>
 				</div>
 				<div class="row">
 					<h3>Hits: <span id="hits">0</span></h3>
 				</div>
-				<div class="row">
-					<h3>Sheild: <span id="sheild">  </span></h3>
-				</div>
+				
 			</div>
 
 			<div class="col-md-3 col-md-offset-3 bkButtons">
 				<div class="row">
 					<h4>Attacks</h4>
-					<button class="btn btn-default" onclick="slap();gotHit();">SLAP</button>
-<button class="btn btn-default" onclick="punch();gotHit();">PUNCH</button>
-<button class="btn btn-default" onclick="kick();gotHit();">KICK</button>
+					<button class="btn btn-default" onclick="ctrl.handleAttack('slap')">SLAP</button>
+<button class="btn btn-default" onclick="ctrl.handleAttack('punch')">PUNCH</button>
+<button class="btn btn-default" onclick="ctrl.handleAttack('kick')">KICK</button>
 </div>
 <div class="row">
 	<h4>Items</h4>
-	<button class="btn btn-default" onclick="giveItem('sheild', mrDude)">SHEILD</button>
-<button class="btn btn-default" onclick="useItem('food', mrDude)">FOOD</button>
-<button class="btn btn-default" onclick="useItem('water', mrDude)">WATER</button>
+	<button class="btn btn-default" onclick="ctrl.handleItem('sheild')">SHEILD</button>
+<button class="btn btn-default" onclick="ctrl.handleItem('food')">FOOD</button>
+<button class="btn btn-default" onclick="ctrl.handleItem('water')">WATER</button>
 </div>
 </div>
 </div>
@@ -47,8 +47,9 @@
 		</div>
 	</div>
 	</div>
-	<script src="game.js">
-	</script>
+	<script src="game-service.js"></script>
+	<script src="game-controller.js"></script>
+	<script src="game.js"></script>
 </body>
 
 </html>
